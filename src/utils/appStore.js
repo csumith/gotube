@@ -1,11 +1,11 @@
-import {configureStore} from '@reduxjs/toolkit'
-import appSlice from './appSlice'
+import { configureStore } from "@reduxjs/toolkit";
+import appSlice from "./appSlice";
+import searchSlice from "./searchSlice";
 
 const appStore = configureStore({
-  reducer:{
+  reducer: {
     app: appSlice,
-  }
-
-})
-export default appStore
-
+    caching: searchSlice,
+  },
+});
+export default appStore;
