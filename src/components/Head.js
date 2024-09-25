@@ -59,7 +59,7 @@ const Head = () => {
   };
 
   return (
-    <div className="grid grid-flow-col p-2 m-1 shadow-2xl border  border-gray-300">
+    <div className="grid grid-flow-col p-2 m-1 shadow-sm ">
       <div className="flex col-span-1 w-52">
         <img
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQBzKUdqe4CetMZnfMPRS1s3SK_A45pQdY0A&s"
@@ -88,7 +88,7 @@ const Head = () => {
           Search
         </button>
         {show && (
-          <div className="absolute bg-white py-2 px-2 rounded-lg text-black w-[375px] z-10 border border-gray-200">
+          <div className="absolute bg-white py-2 px-2 rounded-lg text-black w-[375px] z-10 shadow-sm">
             <ul>
               {sujection &&
                 sujection.map((sujection) => {
